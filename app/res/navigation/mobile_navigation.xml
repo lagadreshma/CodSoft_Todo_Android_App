@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_tasks">
+
+    <fragment
+        android:id="@+id/nav_tasks"
+        android:name="com.example.codsofttodo.ui.Tasks.TasksFragment"
+        android:label="Tasks"
+        tools:layout="@layout/fragment_tasks"/>
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.codsofttodo.ui.Calendar.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar"/>
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.example.codsofttodo.ui.Notes.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes"/>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.codsofttodo.ui.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/addNote"
+        android:name="com.example.codsofttodo.ui.Notes.AddNoteFragment"
+        android:label="Add Note"
+        tools:layout="@layout/fragment_add_note"/>
+
+</navigation>
